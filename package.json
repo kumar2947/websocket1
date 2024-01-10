@@ -1,6 +1,6 @@
 {
   "name": "addintest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "My package in npm",
   "displayName": "kumar",
   "dependencies": {
