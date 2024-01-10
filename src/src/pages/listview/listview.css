@@ -1,8 +1,0 @@
-@media (min-width:1024px){
-    .listview-filters{
-        width: 340px;
-    }
-    .listview-table{
-        max-width: calc(100% - 340px);
-    }
-}
