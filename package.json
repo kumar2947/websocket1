@@ -1,9 +1,9 @@
 {
   "name": "websocket1",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "src/index.js",
-  "files": ["dist", "src"],
+  "files": ["dist", "src","components"],
   "private": false,
   "peerDependencies": {
     "react": "^16.8.0",
