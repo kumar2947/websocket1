@@ -1,26 +1,57 @@
 {
-  "name": "websocket1",
-  "version": "0.1.0",
-  "private": true,
+  "name": "myprojectpackageprav",
+  "version": "0.0.7",
+  "description": "My package in npm",
+  "displayName": "pravalika",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
+    "@fullcalendar/core": "4.3.1",
+    "@fullcalendar/daygrid": "4.3.0",
+    "@fullcalendar/interaction": "4.3.0",
+    "@fullcalendar/react": "4.3.0",
+    "@fullcalendar/resource-timegrid": "4.3.0",
+    "@fullcalendar/resource-timeline": "4.3.0",
+    "@fullcalendar/timegrid": "4.3.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.70",
-    "@types/react": "^18.2.47",
-    "@types/react-dom": "^18.2.18",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
+    "@types/node": "^16.18.39",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-redux": "^7.1.25",
+    "draft-js": "^0.11.7",
+    "fullcalendar": "^3.10.1",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "react-autocomplete": "^1.8.1",
+    "react-big-calendar": "0.23.0",
+    "react-calendar": "2.19.2",
+    "react-data-table-component": "^7.5.3",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-multi-carousel": "^2.8.3",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "^5.0.1",
+    "react-table": "^7.8.0",
+    "styled-components": "^6.0.2",
+    "types": "./dist/esm/index.d.ts",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/esm/",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepublish": "yarn run lint && yarn run test && yarn run build && yarn copy-files"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pravalikasoma1/TestReact.git"
+  },
+  "peerDependencies": {
+    "react": ">=16"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +70,29 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^2.0.3",
+    "@types/jest": "^29.5.4",
+    "@types/react": "^18.2.36",
+    "@types/react-draft-wysiwyg": "^1.13.4",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/uuid": "^9.0.2",
+    "copyfiles": "^2.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "common-components"
+  ],
+  "author": "Pravalika Soma",
+  "license": "MIT"
 }

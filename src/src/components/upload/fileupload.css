@@ -1,0 +1,99 @@
+#form-file-upload {
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    border: 1px solid #cfd0d5;
+    background-color: #f0f2f8 !important;
+    padding-bottom: 27px;
+}
+
+#attachFile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -44px;
+    top: 30px;
+    height: 28px;
+    z-index: 0;
+    width: 120px;
+    background: transparent;
+    box-shadow: none;
+    font-size: 0;
+    border: 0;
+}
+
+.attachmentsdisplay {
+    width: 100%;
+    display: inline-block;
+    margin: 3px 0;
+    text-align: left;
+}
+
+.attachmentsdisplay ul {
+    margin: 0 5px;
+    padding: 0;
+    width: 100%;
+    display: inherit;
+}
+
+.attachmentsdisplay ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-align: left;
+    padding: 3px 15px 3px 0px;
+}
+
+.attachedfiles {
+    color: #0E2982;
+    word-break: break-word;
+    font-weight: normal;
+    font-family: 'sourcesansprosemibold', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 5px;
+    border-bottom: none;
+}
+
+.attachedfiles a {
+    color: #0E2982 !important;
+}
+
+.attachedfiles a:hover {
+    text-decoration: underline;
+}
+
+.attachmentsdisplay ul li span[class^="icon-close"] {
+    color: #C92B1F;
+    font-size: 11px;
+    top: 1px;
+    position: relative;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.choosebtn {
+    background-color: #fff;
+    width: 120px;
+    height: 27px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    border: 1px solid #ccc;
+    z-index: 1;
+    line-height: 27px;
+    margin-top: 30px;
+    margin-left: 33px;
+}
+
+label.choosebtn:before {
+    content: "\e938";
+    font-family: 'icomoon';
+    padding-right: 5px;
+    position: absolute;
+    left: -32px;
+    top: 2px;
+    font-size: 20px;
+    color: #ccc;
+}

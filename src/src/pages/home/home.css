@@ -1,0 +1,5 @@
+.container{width: auto;}
+table thead th{background-color: #EDF2F8 !important;}
+.ka-qa .tabs .card-header, .ka-qa .text-end.mt-auto{display: none;}
+.ka-qa .tabs .text-end.mt-auto{display: block;}
+.ka-qa .customTabs-content .card-body{padding-left:0px; padding-right:0px;}
